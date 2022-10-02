@@ -1,0 +1,122 @@
+body{
+	padding: 0;
+	margin: 0;
+	background:#f4f4f4;
+}
+html,h1,h2,h3,h4,h5,h6,a{
+	font-family: "Raleway";
+}
+.navbar{
+	background:grey;
+}
+.butn {
+    color: grey;
+    margin-right: 1em ;
+    font-style: italic;
+}
+.nav-link , .navbar-brand{
+	color: whitesmoke;
+	cursor: pointer;
+}
+.nav-link{
+	margin-right: 1em !important;
+}
+.nav-link:hover{
+	background: #f4f4f4;
+	color: rgb(45, 45, 207);
+
+}
+.navbar-collapse{
+ justify-content: flex-end;
+}
+.navbar-toggler{
+  background:#fff !important;
+}
+
+/*header style*/
+.header{
+	position: sticky;
+	background-image: url('../images/covidbg.png');
+
+	background-size: cover;
+	background-position: center;
+}
+.overlay{
+	position: absolute;
+	min-height: 100%;
+	min-width: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(129, 128, 128, 0.493);
+}
+.description{
+    position: relative;
+    top: 80px;
+    margin-left: 1px;
+	margin-right: 1px;
+	margin-top: 1px;
+    padding: 4em;
+	text-align: left;
+
+}
+.description h4{
+	color:#F97300 ;
+}
+.description p{
+	color:rgba(248, 239, 239, 0.836);
+	font-size: 20px;
+	width: 80%;
+	line-height: 1.5;
+
+}
+.description button{
+	border:1px  solid #F97300;
+	background:#F97300;
+	color:#fff;
+}
+.lds-ring {
+	display: inline-block;
+	position: relative;
+	width: 80px;
+	height: 80px;
+	top: 50%;
+  }
+  .lds-ring div {
+	box-sizing: border-box;
+	display: block;
+	position: absolute;
+	width: 64px;
+	height: 64px;
+	margin: 8px;
+	border: 8px solid #fff;
+	border-radius: 50%;
+	animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+	border-color: #fff transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+	animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+	animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+	animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+	0% {
+	  transform: rotate(0deg);
+	}
+	100% {
+	  transform: rotate(360deg);
+	}
+  }
+ .over{
+	z-index: 99999;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.7);
+	text-align: center;
+ } 
